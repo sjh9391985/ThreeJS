@@ -52,11 +52,18 @@ scene.add(cube);
 
 camera.position.z = 5;
 
+// scene 렌더링
+/*
+    "render" or "animate loop" 를 통해서 렌더링 과정을 거칩니다.
+    새로고침 할 때 계속해서 렌더링을 해 줄 것입니다.  
+*/
 function animate() {
     requestAnimationFrame(animate);
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    // 큐브 애니메이팅
+    // 화면에 보이는 큐브가 x, y 축으로 시간마다 돌아가게 만들어 줍니다.
+    cube.rotation.x += 0.05;
+    cube.rotation.y += 0.05;
 
     renderer.render(scene, camera);
 };
