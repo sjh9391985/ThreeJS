@@ -35,7 +35,7 @@ document
 
 // 선그리기
 // 1. LineBasicMaterial 이나 LineDashedMaterial 을 사용하면 됩니다.
-const material = new THREE.LineBasicMaterial({ color : 0x0000ff });
+const material = new THREE.TextGeoMetry( text, parameters )
 
 // 2. 꼭지점에 대한 기하학을 정의해야 합니다.
 const points = [];
